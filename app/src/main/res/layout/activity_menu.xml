@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_wave_blue">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:numColumns="2"
+        android:rowCount="3">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvData"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Dados"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/icon_profile_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="97dp"
+                    app:srcCompat="@drawable/account_focused" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvBooks"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cvData"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Ementas"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ivBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="97dp"
+                    app:srcCompat="@drawable/ic_baseline_menu_book_24" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvMaps"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvData">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Mapas"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ivMaps"
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp"
+                    app:srcCompat="@drawable/ic_baseline_map_24" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvMusic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cvMaps"
+            app:layout_constraintTop_toBottomOf="@+id/cvBooks"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Music"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ivMusic"
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp"
+                    app:srcCompat="@drawable/ic_baseline_library_music_24" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvSite"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvMaps"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sites"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ivSite"
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp"
+                    app:srcCompat="@drawable/ic_baseline_link_24" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvAmbiente"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cvSite"
+            app:layout_constraintTop_toBottomOf="@+id/cvMusic"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Ambiente"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ivAmbiente"
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp"
+                    app:srcCompat="@drawable/ic_baseline_laptop_24" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvOther"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvSite"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Outros"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ivOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp"
+                    app:srcCompat="@drawable/ic_baseline_sticky_note_2_24" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvSair"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cvOther"
+            app:layout_constraintTop_toBottomOf="@+id/cvAmbiente"
+            app:cardCornerRadius="20dp">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sair" />
+
+                <ImageView
+                    android:id="@+id/ivSair"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    app:srcCompat="@drawable/ic_baseline_exit_to_app_24" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</ScrollView>

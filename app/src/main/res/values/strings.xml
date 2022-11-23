@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">EldoradoSys</string>
+    <string name="welcome">Bem-vindo\nao Eldorado</string>
+
+    <!-- ENTRAR -->
+    <string name="entrar">Entrar</string>
+    <!--Criar conta-->
+    <string name="newAccount">Ainda não é membro? Criar conta</string>
+
+    <!-- NAME_MENU  -->
+    <string name="nameMenu">Olá, Maikon Guimarães</string>
+
+    <!-- NOME -->
+    <string name="nameView">Nome</string>
+    <string name="iName">Informe seu nome</string>
+    <!-- PHONE -->
+    <string name="phone">Telefone</string>
+    <string name="iPhone">Informe seu telefone</string>
+    <!-- CEP -->
+    <string name="CEP">Endereco</string>
+    <string name="iCEP">Informe seu endereco</string>
+    <!-- Login -->
+    <string name="login">Login</string>
+    <string name="iLogin">Informe seu login</string>
+    <!-- Senha -->
+    <string name="senha">Senha</string>
+    <string name="iSenha">Informe sua senha</string>
+
+    <!-- SITE -->
+    <string name="sites">Informe seu site</string>
+
+    <!-- ACTION_TITLE -->
+    <string name="menuTitle">Menu</string>
+    <string name="FormTitle">Formulário de Cadastro</string>
+
+    <!-- Loading_Translate -->
+    <string name="loading">Loading...</string>
+
+    <!-- ESQUECEU_A_SENHA  -->
+    <string name="forgot_password">Esqueceu a senha?</string>
+
+    <!-- MUDAR_SENHA -->
+    <string name="mudarSenha">Mudar Senha</string>
+
+    <string name="usuarioNewLogin">Usuário</string>
+    <string name="usuarioLogin">Usuário</string>
+
+    <string name="usuarioNewSenha">Senha</string>
+    <string name="usuarioSenha">Senha</string>
+
+    <string name="usuarioNewSenhaConfirm">Nova senha</string>
+    <string name="usuarioNovaSenha">Confirme a senha</string>
+
+    <string name="AtualizarSenha">Atualizar</string>
+
+
+    <!--GRIDVIEW_OPTIONS-->
+    <string name="Dados">Meus dados</string>
+    <string name="Ementas">Ementas</string>
+    <string name="Mapas">Mapas</string>
+    <string name="Music">Músicas</string>
+    <string name="Sites">Site</string>
+    <string name="Ambiente">Ambiente</string>
+    <string name="Outros">Outros</string>
+    <string name="Sair">Sair</string>
+
+</resources>
